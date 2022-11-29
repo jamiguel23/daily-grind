@@ -34,8 +34,8 @@ function coffeeTemplate(coffee) {
 
 
 let myDate = new Date();
-// let today = myDate.getDay();
-let today = 0
+let today = myDate.getDay();
+// let today = 0
 let thisYear = myDate.getFullYear();
 
 let coffee = '';
@@ -131,6 +131,7 @@ document.getElementById('coffee-template').innerHTML = coffeeTemplate(coffee);
 
 
 document.querySelector("html").style.backgroundColor = coffee.color
+// document.getElementsByClassName("feature").style.color = coffee.color
 
 
 
