@@ -20,18 +20,18 @@ alert('Can you see this?')
 
 
 let myDate = new Date();
-let day = myDate.getDay();
+let today = myDate.getDay();
 let thisYear = myDate.getFullYear();
 
 let coffee = '';
 
-switch (day) {
+switch (today) {
 
   case 0:
-    day = "Sunday";
+    today = "Sunday";
     break;
   case 1:
-    day = "Monday";
+    today = "Monday";
     coffee = {
       color: 'pink',
       name: 'Bubble Tea',
@@ -42,19 +42,27 @@ switch (day) {
     };
     break;
   case 2:
-    day = "Tuesday";
+    today = "Tuesday";
+    coffee = {
+      color: 'brown',
+      name: 'Carmel Latte',
+      pic: 'caramel-latte.jpg',
+      alt: 'Pic of caramel latte',
+      day: 'Tuesday',
+      desc: `It's cold, so a caramel latte sounds good`,
+    };
     break;
   case 3:
-    day = "Wednesday";
+    today = "Wednesday";
     break;
   case 4:
-    day = "Thursday";
+    today = "Thursday";
     break;
   case 5:
-    day = "Friday";
+    today = "Friday";
     break;
   case 6:
-    day = "Saturday";
+    today = "Saturday";
     break
   default:
     alert('switch case error')
