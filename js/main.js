@@ -18,9 +18,24 @@
 
 // alert('Can you see this?')
 
+function coffeeTemplate(coffee) {
+
+
+  return `<p>
+  <img src="images/${coffee.pic}"
+    alt="${coffee.alt}!"
+    id="coffee" />
+  <strong class="feature">${coffee.day}'s Coffee
+    Special:</strong> ${coffee.day}'s daily coffee special is
+    ${coffee.name}.
+    ${coffee.desc}!
+</p>`;
+}
+
 
 let myDate = new Date();
-let today = myDate.getDay();
+// let today = myDate.getDay();
+let today = 4
 let thisYear = myDate.getFullYear();
 
 let coffee = '';
@@ -54,9 +69,25 @@ switch (today) {
     break;
   case 3:
     today = "Wednesday";
+    coffee = {
+      color: '#241444',
+      name: 'Cold Brew',
+      pic: 'cold-brew.jpg',
+      alt: 'picture of cold brew',
+      day: 'Wednesday',
+      desc: `Nothing like some refreshing cold brew`,
+    };
     break;
   case 4:
     today = "Thursday";
+    coffee = {
+      color: 'black',
+      name: 'Drip Coffee',
+      pic: 'drip.jpg',
+      alt: 'picture of drip',
+      day: 'Thursday',
+      desc: `A drink to match my soul`,
+    };
     break;
   case 5:
     today = "Friday";
@@ -70,7 +101,10 @@ switch (today) {
 
 console.log(coffee);
 
+document.getElementById('coffee-template').innerHTML = coffeeTemplate(coffee);
 
+
+document.querySelector("html").style.backgroundColor = coffee.color
 
 
 
