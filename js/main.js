@@ -16,7 +16,7 @@
 // A unique color that supports the image and paragraph of content
 
 
-alert('Can you see this?')
+// alert('Can you see this?')
 
 
 let myDate = new Date();
@@ -45,9 +45,9 @@ switch (today) {
     today = "Tuesday";
     coffee = {
       color: 'brown',
-      name: 'Carmel Latte',
+      name: 'Caramel Latte',
       pic: 'caramel-latte.jpg',
-      alt: 'Pic of caramel latte',
+      alt: 'picture of caramel latte',
       day: 'Tuesday',
       desc: `It's cold, so a caramel latte sounds good`,
     };
