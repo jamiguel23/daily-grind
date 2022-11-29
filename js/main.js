@@ -35,7 +35,7 @@ function coffeeTemplate(coffee) {
 
 let myDate = new Date();
 // let today = myDate.getDay();
-let today = 4
+let today = 0
 let thisYear = myDate.getFullYear();
 
 let coffee = '';
@@ -44,6 +44,16 @@ switch (today) {
 
   case 0:
     today = "Sunday";
+    coffee = {
+      color: '#FF7518',
+      name: 'Pumpkin Spice',
+      pic: 'pumpkin-spice-latte.jpg',
+      alt: 'picture of pumpkin spice',
+      day: 'Sunday',
+      desc: `which makes us wish it was always Fall, as this is one
+      of our top sellers!
+ `,
+    };
     break;
   case 1:
     today = "Monday";
@@ -91,9 +101,25 @@ switch (today) {
     break;
   case 5:
     today = "Friday";
+    coffee = {
+      color: '#00704A',
+      name: 'Frappaccino',
+      pic: 'frappaccino.jpg',
+      alt: 'picture of frappaccino',
+      day: 'Friday',
+      desc: `Cool down with one`,
+    };
     break;
   case 6:
     today = "Saturday";
+    coffee = {
+      color: '#C8AD90',
+      name: 'Mocha',
+      pic: 'mocha.jpg',
+      alt: 'picture of mocha',
+      day: 'Saturday',
+      desc: `Saturday mocha? Who could say no?`,
+    };
     break
   default:
     alert('switch case error')
