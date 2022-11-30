@@ -39,8 +39,28 @@ let today = myDate.getDay();
 let thisYear = myDate.getFullYear();
 
 let coffee = '';
+let myDay = '';
 
-switch (today) {
+
+//use location object to access querystring (address bar)
+const queryString = window.location.search;
+    
+//output to console    
+console.log(queryString);
+    
+//separate querystring parameters
+const urlParams = new URLSearchParams(queryString);
+
+if(urlParams.has('day')){
+  myDay = urlParams.get('day')
+} else{
+  myDay = today
+}
+
+
+// change to a number not string
+myDay = parseInt(myDay)
+switch (myDay) {
 
   case 0:
     today = "Sunday";
@@ -51,8 +71,9 @@ switch (today) {
       alt: 'picture of pumpkin spice',
       day: 'Sunday',
       desc: `which makes us wish it was always Fall, as this is one
-      of our top sellers!
- `,
+      of our top sellers!`,
+      p: 'yes, pumpkin spice is very good for the soul',
+      p2: 'I hope you all enjoy'
     };
     break;
   case 1:
@@ -125,13 +146,12 @@ switch (today) {
     alert('switch case error')
 }
 
-console.log(coffee);
-
 document.getElementById('coffee-template').innerHTML = coffeeTemplate(coffee);
-
+document.getElementById('feature').innerHTML = coffee.p
+document.getElementById('feature2').innerHTML = coffee.p2
 
 document.querySelector("html").style.backgroundColor = coffee.color
-// document.getElementsByClassName("feature").style.color = coffee.color
+document.getElementByID("feature").style.color = coffee.color
 
 
 
