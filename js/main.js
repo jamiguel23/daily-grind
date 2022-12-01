@@ -85,6 +85,8 @@ switch (myDay) {
       alt: 'A picture of bubble tea',
       day: 'Monday',
       desc: `I like bubble tea`,
+      p: 'yes, bubble tea is very good for the soul',
+      p2: 'live mas'
     };
     break;
   case 2:
@@ -96,6 +98,8 @@ switch (myDay) {
       alt: 'picture of caramel latte',
       day: 'Tuesday',
       desc: `It's cold, so a caramel latte sounds good`,
+      p: 'yes, Caramel Latte is very good for the soul',
+      p2: 'get crunk'
     };
     break;
   case 3:
@@ -107,6 +111,8 @@ switch (myDay) {
       alt: 'picture of cold brew',
       day: 'Wednesday',
       desc: `Nothing like some refreshing cold brew`,
+      p: 'yes, Cold BREW is very good for the soul',
+      p2: 'Cold, like the weather'
     };
     break;
   case 4:
@@ -118,6 +124,8 @@ switch (myDay) {
       alt: 'picture of drip',
       day: 'Thursday',
       desc: `A drink to match my soul`,
+      p: 'yes, Drip coffee is very good for the soul',
+      p2: 'drip drip'
     };
     break;
   case 5:
@@ -129,6 +137,8 @@ switch (myDay) {
       alt: 'picture of frappaccino',
       day: 'Friday',
       desc: `Cool down with one`,
+      p: 'yes, frappaccino is very good for the soul',
+      p2: 'Have you seen Zoolander?'
     };
     break;
   case 6:
@@ -140,6 +150,8 @@ switch (myDay) {
       alt: 'picture of mocha',
       day: 'Saturday',
       desc: `Saturday mocha? Who could say no?`,
+      p: 'yes, Mocha is very good for the soul',
+      p2: 'Zoolander reference again'
     };
     break
   default:
